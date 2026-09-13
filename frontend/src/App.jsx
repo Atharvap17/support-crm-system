@@ -13,7 +13,7 @@ function App() {
   const [note, setNote] = useState("")
 
   const getTickets = async () => {
-    let url = "http://127.0.0.1:8000/api/tickets"
+    let url = "https://support-crm-system-production-8376.up.railway.app/api/tickets"
 
     const params = new URLSearchParams()
 
@@ -37,7 +37,7 @@ function App() {
 
   const getTicket = async (ticketId) => {
     const response = await fetch(
-      `http://127.0.0.1:8000/api/tickets/${ticketId}`
+      `https://support-crm-system-production-8376.up.railway.app/api/tickets/${ticketId}`
     )
 
     const data = await response.json()
@@ -53,7 +53,7 @@ function App() {
     e.preventDefault()
 
     const response = await fetch(
-      "http://127.0.0.1:8000/api/tickets",
+      "https://support-crm-system-production-8376.up.railway.app/api/tickets",
       {
         method: "POST",
         headers: {
@@ -284,7 +284,7 @@ function App() {
               <button
                 onClick={async () => {
                   const response = await fetch(
-                    `http://127.0.0.1:8000/api/tickets/${selectedTicket.ticket_id}`,
+                    `https://support-crm-system-production-8376.up.railway.app/api/tickets/${selectedTicket.ticket_id}`,
                     {
                       method: "PUT",
                       headers: {
@@ -327,7 +327,7 @@ function App() {
                   }
 
                   const response = await fetch(
-                    `http://127.0.0.1:8000/api/tickets/${selectedTicket.ticket_id}`,
+                    `https://support-crm-system-production-8376.up.railway.app/api/tickets/${selectedTicket.ticket_id}`,
                     {
                       method: "PUT",
                       headers: {
