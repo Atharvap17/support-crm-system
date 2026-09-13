@@ -1,0 +1,18 @@
+# Python
+backend/env/
+backend/__pycache__/
+backend/*.pyc
+
+# SQLite
+backend/crm.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+.env
+.env.*
+
+# Vite
+frontend/.vite/
