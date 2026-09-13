@@ -7,4 +7,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  preview: {
+    allowedHosts: [
+      "support-crm-system-production-f5ed.up.railway.app"
+    ]
+  }
 })
