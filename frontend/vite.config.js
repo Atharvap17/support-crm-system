@@ -9,7 +9,7 @@ export default defineConfig({
   ],
   preview: {
     allowedHosts: [
-      "support-crm-system-production-f5ed.up.railway.app"
+     "support-crm-system-production-f5ed.up.railway.app"
     ]
   }
 })
